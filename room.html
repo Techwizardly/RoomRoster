@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book your bed in RoomRoster</title>
+    <link rel="stylesheet" href="room.css">
+</head>
+<body>
+    <div class="outer-container">
+        <div class="inner-container">
+            
+
+            <nav>
+                <div class="logo">
+                    <h1>RoomRoster</h1>
+                    <i id="menu" class="fa-solid fa-bars"></i>
+                </div>  
+                <div class="links">
+                    <a href="#">Services</a>
+                    <a href="#">Blogs</a>
+                    <a href="#">User Profile</a>
+                    <a href="#">Help and Support</a>
+                    <a href="#">Account Deactivation</a>
+                </div>
+               
+            </nav>
+
+            <div class="nav2">
+                <p class="clock"></p> 
+                <div class="word">
+                    <p>Meet your people...
+                        <br>
+                   Choose your stay, and we'll show you 
+                   <br>
+                   who is with !
+                    </p>
+                </div>
+                
+                
+            </div>
+
+        </div>
+
+        <div class="outer-infocollection">
+            <div class="infocollection">
+                <h4>Where do you want to stay in Chennai?</h4>
+                <input type="text" placeholder="Enter Location" class="box1" id="locationInput"> 
+                <div class="dropdown" id="locationDropdown">
+                    <ul>
+                        
+                    </ul>
+                </div>
+                <ul class="ul1">
+                    <li>Check-In</li>
+                    <li>Check-Out</li>
+                    <li>Guests</li>
+                </ul>
+                <ul class="ul2">
+                    <li><input type="date" placeholder="Begins stay"></li>
+                    <li><input type="date" placeholder="Ends stay"></li>
+                    <li><input type="text" placeholder="No.of.person"></li>
+                </ul>
+                <button>Let's go !  </button>
+            </div>
+        </div> 
+
+        <div class="page2">
+            <div class="page2-inner">
+                <div class="line-container">
+                    <hr class="line-left">
+                    <h1>Example Rooms</h1>
+                    <hr class="line-right">
+                </div>
+                <h6>Tap to open. Everything is available</h6>
+            
+                <div class="rooms-container">
+                    <div class="room room1">
+                        <img src="room4.jpg" alt="">
+                        <h3>Single Sharing</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic, quidem!</p>
+                        <a href="#" target="_blank">View more</a>
+                    </div>
+                    <div class="room room2">
+                        <img src="room3.jpg" alt="">
+                        <h3>Double Sharing</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic, quidem!</p>
+                        <a href="#" target="_blank">View more</a>
+                    </div>
+                    <div class="room room3">
+                        <img src="room2.jpg" alt="">
+                        <h3>Triple Sharing</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic, quidem!</p>
+                        <a href="#" target="_blank">View more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+  
+        
+        <div class="page3">
+            <div class="page3-inner">
+                <div class="line3">
+                    <hr class="left-line">
+                    <h1>Features</h1>
+                    <hr class="right-line">
+                </div>
+                <h6>How it works</h6>
+                <div class="advantage">
+                    <div class="subtitle">
+                        <h2>Why Stay With Us?</h2>
+                        <p>Experience a comfortable and convenient stay with our premium amenities</p>
+                   </div>
+                </div>
+                <div class="row-1">
+                    <ul class="adv1">
+                        <li class="point point1">Complimentary Meals</li>
+                        <li class="point point2">Free High-Speed WiFi</li>
+                        <li class="point point3">Filtered RO Water</li>
+                        <li class="point point4">Laundry Services</li>
+                        <li class="point point5">Variety of Room Options: Ac and Non-Ac rooms to suit your comfort.</li>
+                    </ul>
+                
+                    <div class="dress1">
+                        <img src="hostel-lunch-box.jpg" alt="" width="100%" class="hostel-lunch">
+                    </div>
+                </div>
+                <div class="row-2">
+                    <div class="dress2">
+                        <img src="lending.jpg" alt="" width="100%" class="lending-dress">
+                    </div>
+                    <ul class="adv2">
+                        <li class="point point6">Lending dress/things</li>
+                        <li class="point point7">Free parking</li>
+                        <li class="point point8">Fully Surrounded Security Cameras</li>
+                        <li class="point point9">Geyser Available</li>
+                        <li class="point point10">Happy Stay with Us!:)..</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        
+        <!-- <div class="page4">
+            <div class="page4-inner">
+                <div class="page4div1">
+                    <h3>Say <span>Hello</span> before you go
+                    <span class="loader"></span>
+                    <span class="loader"></span>
+                    <span class="loader"></span>
+                    <span class="loader"></span>
+                    </h3>
+                    
+                </div>
+                <div class="page4div2">
+                    <p>Connect with others staying in the same premises</p>
+                    <h2>Happening:)!</h2>
+                </div>
+                <div class="application">
+                    <form class="lendingform">
+                        <div class="button-container">
+                            <h1>Choose your Role</h1>
+                            <button onclick="showLenderForm()">Lender</button>
+                            <button onclick="showBorrowerForm()">Borrower</button>
+                            
+                        </div>
+                            <div id="lenderForm" style="display: none;">
+                                <h2>Lender Form</h2>
+                            <form>
+                                <label for="Credential">Credential ID</label>
+                                <input type="text" class="Credential" placeholder="Enter your ID" required>
+                                <br>
+                                <label for="lenderName">Lender Name</label>
+                                <input type="text" id="lenderName" placeholder="Enter lender's name" required>
+                                <br>
+                                <br> 
+                                <label for="lenderPhone">Lender Phone Number</label>
+                                <input type="text" id="lenderPhone" placeholder="Enter lender's contact number">
+                                <br>
+                                <br> 
+                                <label for="itemName">Item Name</label>
+                                <input type="text" id="itemName" placeholder="Enter Detail" >
+                                <br>
+                                <br> 
+                                <label for="itemPicture">Item Picture</label>
+                                <input type="file" id="itemPicture" accept="image/png,image/jpg" placeholder="Attach jpg/png" >
+                                <div class="itemPreview"></div>
+                                
+                                <br> 
+                                <label for="endDate">End Date(Max 15 days)</label>
+                                <input type="date" id="endDate" placeholder="Mention the end date" >
+                                <br> 
+                                <button type="submit" class="submitButton">Submit</button>
+                                <button type="submit" class="backButton">Back</button>
+                            </form>
+                            </div>
+                            <div id="borrowerForm" style="display: none;">
+                                <h2>Borrower Form</h2>
+                                <form>
+                                    <label for="Credential">Credential ID</label>
+                                    <input type="text" class="Credential" placeholder="Enter your ID" required>
+                                    <br>
+                                    <label for="borrowerName">Borrower Name</label>
+                                    <input type="text" id="borrowerName" placeholder="Enter Borrower name" required>
+                                    
+                                    <label for="borrowerPhone">Borrower Phone Number</label>
+                                    <input type="text" id="borrowerPhone" placeholder="Enter Borrower's contact number" >
+                                    
+                                    <label for="itemName">Item Name</label>
+                                    <input type="text" id="itemName" placeholder="Enter Detail">
+                                    
+                                    <label for="itemPicture">Item Picture</label>
+                                    <input type="file" id="itemPicture" accept="image/png,image/jpg" placeholder="Attach jpg/png" >
+                                    <div class="itemPreview"></div>
+                                     
+                                    <label for="startDate">Start Date</label>
+                                    <input type="date" id="startDate" placeholder="Mention today's date" >
+                                    
+                                    <br> 
+                                    <button type="submit" class="submitButton">Submit</button>
+                                    <button type="submit" class="backButton">Back</button>
+                                </form>
+                            </div>
+                    </form>
+                </div>
+               <div id="lendingdata" style="display: block;">
+                    <h2>Transactions</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Lender</th>
+                                <th>Phone</th>
+                                <th>Item</th>
+                                <th>Item Picture</th>
+                                <th>Borrower</th>
+                                <th>Borrower Phone</th>
+                                <th>Start Date</th>
+                                <th>End Date</th>
+                                <th>Return Picture</th>
+                            </tr>
+                        </thead>
+                        <tbody id="dataBody"></tbody>
+                        <p id="no-records" style="display: none; text-align: center;">No records found</p>
+                    </table>
+               </div> 
+            </div>
+        </div> -->
+        
+
+        <div class="page5">
+            <div class="page5-inner">
+                <div class="homepage">
+                    <header>
+                        <h1>Welcome to Hostel Lending Management</h1>
+                        <p>Connect, Share, and Grow!</p>
+                    </header>
+                    <section class="transactions-preview">
+                        <h2>Recent Lending & Borrowing Transactions</h2>
+                        <div id="transactionList">
+                            <div class="transaction">
+                                <p><strong>Lender:</strong> Alice</p>
+                                <p><strong>Item:</strong> Laptop</p>
+                                <p><strong>Borrower:</strong> Bob</p>
+                                <p><strong>Date:</strong> 2024-12-12</p>
+                            </div>
+                            <!-- Add dynamic transactions here -->
+                        </div>
+                    </section>
+                    <section class="registration-links">
+                        <h2>Become a Part of Our Lending Management</h2>
+                        <button id="openLenderForm" class="register-btn">Register as a Lender</button>
+                        <button id="openBorrowerForm" class="register-btn">Register as a Borrower</button>
+                    </section>
+                    <a href="#" id="openPopup" class="register-link">Click here to register</a>
+                </div>
+
+                <div class="registration-page">
+                    <header>
+                        <h1>Registration</h1>
+                    </header>
+                    <form class="registration-form">
+                        <h2 id="formTitle">Lender/Borrower Registration</h2>
+                        <label for="name">Name</label>
+                        <input type="text" id="name" placeholder="Enter your name" required>
+                        
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" placeholder="Enter your phone number" required>
+                        
+                        <label for="role">Role</label>
+                        <select id="role">
+                            <option value="lender">Lender</option>
+                            <option value="borrower">Borrower</option>
+                        </select>
+                        
+                        <button type="button" onclick="submitRegistration()">Submit</button>
+                    </form>
+                    <div id="confirmationMessage" style="display: none;">
+                        <h2>Registration Confirmed!</h2>
+                        <p>Your Lender/Borrower ID: <span id="userId"></span></p>
+                        <p>Please contact the warden for verification.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="room.js"></script>
+</body>
+</html>
