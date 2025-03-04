@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hostel Services</title>
+    <link rel="stylesheet" href="service.css">
+</head>
+<body>
+
+    <header>
+        <h1>Our Services</h1>
+    </header>
+
+    <!-- Services Section -->
+    <section class="services">
+        <div class="service-card">
+            <img src="room5.jpg" alt="Accommodation" onclick="openLightbox(this)">
+            <h3>Accommodation</h3>
+            <p>We offer single, shared, and dormitory rooms with modern amenities.</p>
+        </div>
+
+        <div class="service-card">
+            <img src="dining.jpeg" alt="Food & Dining" onclick="openLightbox(this)">
+            <h3>Food & Dining</h3>
+            <p>Daily meal plans with nutritious options for all residents.</p>
+        </div>
+
+        <div class="service-card">
+            <img src="wifi.jpeg" alt="Free WiFi" onclick="openLightbox(this)">
+            <h3>Free WiFi</h3>
+            <p>Stay connected with high-speed internet access throughout the hostel.</p>
+        </div>
+
+        <div class="service-card">
+            <img src="securitycamera.jpeg" alt="24/7 Security" onclick="openLightbox(this)">
+            <h3>24/7 Security</h3>
+            <p>Security cameras and guards ensure a safe living environment.</p>
+        </div>
+    </section>
+
+    <!-- Lightbox for Image Preview -->
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <img id="lightbox-img">
+    </div>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-item">
+            <button class="faq-question">What are the check-in and check-out timings?</button>
+            <p class="faq-answer">Check-in is at 12 PM and check-out is at 11 AM.</p>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">Are guests allowed?</button>
+            <p class="faq-answer">Guests are allowed only during specified visiting hours.</p>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">Is laundry service available?</button>
+            <p class="faq-answer">Yes, we provide paid laundry services twice a week.</p>
+        </div>
+    </section>
+
+    <script src="service.js"></script>
+</body>
+</html>

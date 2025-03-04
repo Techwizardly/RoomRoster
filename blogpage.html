@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hostel Blog</title>
+    <link rel="stylesheet" href="blogpage.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to the RoomRoster Blog</h1>
+        <br>
+        <nav>
+            <ul>
+                <li><a href="#tips">Hostel Life Tips</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#local">Local Travel Guides</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="tips">
+        <h2>Hostel Life Tips</h2>
+        <div class="blog-post">
+            <h3>How to Stay Organized in a Hostel</h3>
+            <p>Staying organized is key when sharing a living space with others. Here are some tips...</p>
+            <button onclick="showMore('tips1')">Read more</button>
+            <p id="tips1" class="extra-content" style="display:none;">Extra content about staying organized...</p>
+        </div>
+    </section>
+    
+    <section id="events">
+        <h2>Upcoming Events</h2>
+        <div class="blog-post">
+            <h3>Hostel Game Night</h3>
+            <p>Join us this weekend for a fun-filled game night with fellow hostelers...</p>
+            <button onclick="showMore('events1')">Read more</button>
+            <p id="events1" class="extra-content" style="display:none;">Extra content about the event...</p>
+        </div>
+    </section>
+
+    <section id="local">
+        <h2>Local Travel Guides</h2>
+        <div class="blog-post">
+            <h3>Exploring the City</h3>
+            <p>Discover the best local spots around the hostel to make your stay even more memorable...</p>
+            <button onclick="showMore('local1')">Read more</button>
+            <p id="local1" class="extra-content" style="display:none;">Extra content about local travel...</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Hostel Website. All Rights Reserved.</p>
+    </footer>
+
+    <script src="blogpost.js"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help & Support</title>
+    <link rel="stylesheet" href="help-support.css">
+</head>
+<body>
+<section id="help-support">
+    <h2>Help & Support</h2>
+    <div class="support-options">
+        <div class="option">
+            <h3>FAQs</h3>
+            <p>Find answers to the most common questions asked by hostelers.</p>
+            <button onclick="showFAQ()">View FAQs</button>
+            <div id="faq-list" class="extra-content" style="display:none;">
+                <ul>
+                    <li><strong>How do I book a room?</strong> - You can book a room directly from the 'Room Roster' page.</li>
+                    <li><strong>Can I lend items to other hostelers?</strong> - Yes, the item lending feature is available in your account section.</li>
+                    <li><strong>What do I do in case of an emergency?</strong> - Please contact the hostel management immediately using the contact form.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="option">
+            <h3>Contact Support</h3>
+            <p>If you need further assistance, feel free to reach out to us.</p>
+            <button onclick="openContactForm()">Contact Us</button>
+            <div id="contact-form" class="extra-content" style="display:none;">
+                <form>
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" required><br>
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email" name="email" required><br>
+                    <label for="message">Your Message:</label><br>
+                    <textarea id="message" name="message" rows="4" required></textarea><br>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<script src="help-support.js"></script>
+</body>
+</html>

@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book your bed in RoomRoster</title>
+    <link rel="stylesheet" href="room.css">
+</head>
+<body>
+    <div class="outer-container">
+        <div class="inner-container">
+            
+   
+
+
+            <nav>
+                <div class="logo">
+                    <h1>RoomRoster</h1>
+                    <i id="menu" class="fa-solid fa-bars"></i>
+                </div>  
+                <div class="links">
+                    <a href="service.html" target="_blank">Services</a>
+                    <a href="blogpage.html" target="_blank">Blogs</a>
+                    <a href="help-support.html" target="_blank">Help and Support</a>
+                    
+                </div>
+               
+            </nav>
+
+            <div class="nav2">
+                <p class="clock"></p> 
+                <div class="word">
+                    <p>Meet your people...
+                        <br>
+                   Choose your stay, and we'll show you 
+                   <br>
+                   who is with !
+                    </p>
+                </div>
+                
+                
+            </div>
+
+        </div>
+
+        <div class="outer-infocollection">
+            <div class="infocollection">
+                <h4>Where do you want to stay in Chennai?</h4>
+                <input type="text" placeholder="Enter Location" class="box1" id="locationInput">
+                <div class="dropdown" id="locationDropdown">
+                    <ul>
+                        <li onclick="selectLocation('Marina Beach')">Marina Beach</li>
+                        <li onclick="selectLocation('Adyar')">Adyar</li>
+                        <li onclick="selectLocation('Egmore')">Egmore</li>
+                        <li onclick="selectLocation('Omr')">Omr</li>
+                        <li onclick="selectLocation('T Nagar')">T Nagar</li>
+                    </ul>
+                </div>
+                <ul class="ul1">
+                    <li>Check-In</li>
+                    <li>Check-Out</li>
+                    <li>Guests</li>
+                </ul>
+                <ul class="ul2">
+                    <li><input type="date" id="checkIn"></li>
+                    <li><input type="date" id="checkOut"></li>
+                    <li><input type="text" id="guests" placeholder="No. of persons"></li>
+                </ul>
+                <button id="goButton">Let's go!</button>
+            </div>
+        </div>
+    
+        
+        <!-- Dummy List Section -->
+        <div id="resultContainer" style="display: none; margin-top: 20px; border: 1px solid #ccc; padding: 10px;">
+            <h3>Available Hostels</h3>
+            <table border="1" width="100%">
+                <tr>
+                    <th>Location</th>
+                    <th>Warden Name</th>
+                    <th>No. of People Occupied</th>
+                    <th>Vacancy</th>
+                </tr>
+                <tr>
+                    <td>Marina Beach</td>
+                    <td>Mr. Ravi</td>
+                    <td>50</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>Adyar</td>
+                    <td>Ms. Priya</td>
+                    <td>40</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>Egmore</td>
+                    <td>Mr. Kumar</td>
+                    <td>60</td>
+                    <td>3</td>
+                </tr>
+            </table>
+        </div>
+
+
+        <div class="page2"> 
+            <div class="page2-inner">
+                <div class="line-container">
+                    <hr class="line-left">
+                    <h1>Example Rooms</h1>
+                    <hr class="line-right">
+                </div>
+                <h6>Tap to open. Everything is available</h6>
+    
+                <div class="rooms-container">
+                    <!-- Single Sharing Room -->
+                    <div class="room">
+                        <img src="room4.jpg" alt="Single Sharing Room">
+                        <h3>Single Sharing</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic, quidem!</p>
+                        <a href="#" class="view-more">View more</a>
+                        <div class="popup">
+                            <strong>Single Sharing Room</strong><br>
+                            - Private room with one bed <br>
+                            - Attached bathroom <br>
+                            - Free Wi-Fi & AC <br>
+                            - 24/7 security <br>
+                            <button class="close-popup">Close</button>
+                        </div>
+                    </div>
+    
+                    <!-- Double Sharing Room -->
+                    <div class="room">
+                        <img src="room3.jpg" alt="Double Sharing Room">
+                        <h3>Double Sharing</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic, quidem!</p>
+                        <a href="#" class="view-more">View more</a>
+                        <div class="popup">
+                            <strong>Double Sharing Room</strong><br>
+                            - Two beds in a shared room <br>
+                            - Attached bathroom <br>
+                            - Free Wi-Fi & AC <br>
+                            - Affordable pricing <br>
+                            <button class="close-popup">Close</button>
+                        </div>
+                    </div>
+    
+                    <!-- Triple Sharing Room -->
+                    <div class="room">
+                        <img src="room2.jpg" alt="Triple Sharing Room">
+                        <h3>Triple Sharing</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic, quidem!</p>
+                        <a href="#" class="view-more">View more</a>
+                        <div class="popup">
+                            <strong>Triple Sharing Room</strong><br>
+                            - Three beds in a shared room <br>
+                            - Common bathroom <br>
+                            - Free Wi-Fi <br>
+                            - Budget-friendly option <br>
+                            <button class="close-popup">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+       
+        
+        <div class="page3">
+            <div class="page3-inner">
+                <div class="line3">
+                    <hr class="left-line">
+                    <h1>Features</h1>
+                    <hr class="right-line">
+                </div>
+                <h6>How it works</h6>
+                <div class="advantage">
+                    <h2>Why Stay With Us?</h2>
+                    <p>Experience a comfortable and convenient stay with our premium amenities</p>
+                </div>
+                <div class="features-container">
+                    <ul class="features-list">
+                        <li class="feature-item">Complimentary Meals</li>
+                        <li class="feature-item">Free High-Speed WiFi</li>
+                        <li class="feature-item">Filtered RO Water</li>
+                        <li class="feature-item">Laundry Services</li>
+                        <li class="feature-item">AC & Non-AC Room Options</li>
+                    </ul>
+                    <ul class="features-list">
+                        <li class="feature-item">Lending Dress/Things</li>
+                        <li class="feature-item">Free Parking</li>
+                        <li class="feature-item">24/7 Security</li>
+                        <li class="feature-item">Recreational Space</li>
+                        <li class="feature-item">Happy Stay with Us! 😊</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="page5">
+            <div class="page5-inner">
+                <div class="homepage">
+                    <header>
+                        <h1>Welcome to Hostel Lending Management</h1>
+                        <p>Connect, Share, and Grow!</p>
+                    </header>
+    
+                    <section class="transactions-preview">
+                        <h2>Recent Lending & Borrowing Transactions</h2>
+                        <div id="transactionList">
+                            <div class="transaction">
+                                <p><strong>Lender:</strong> Alice</p>
+                                <p><strong>Item:</strong> Laptop</p>
+                                <p><strong>Borrower:</strong> Bob</p>
+                                <p><strong>Date:</strong> 2024-12-12</p>
+                            </div>
+                        </div>
+                    </section>
+    
+                    <section class="registration-links">
+                        <h2>Become a Part of Our Lending Management</h2>
+                        <button id="openLenderForm" class="register-btn">Register as a Lender</button>
+                        <button id="openBorrowerForm" class="register-btn">Register as a Borrower</button>
+                    </section>
+    
+                    <a href="register.html" class="register-link">Click here to register</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- contact form -->
+        <div class="container">
+            <div class="contact-section">
+                <div class="contact-form">
+                    <h2>Contact Us</h2>
+                    <form id="contactForm">
+                        <input type="text" id="name" placeholder="Your Name" required>
+                        <input type="email" id="email" placeholder="Your Email" required>
+                        <input type="text" id="subject" placeholder="Subject" required>
+                        <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+                        <button type="submit">Send via WhatsApp</button>
+                    </form>
+                </div>
+                <div class="map">
+                    <h3>Find Us Here</h3>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509368!2d144.95373531550472!3d-37.81627974202167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0x5045675218ce6e0!2sMelbourne%20CBD%2C%20Victoria%2C%20Australia!5e0!3m2!1sen!2sin!4v1634354731947!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+            
+            <div class="social-media">
+                <p>Follow us on</p>
+                <a href="https://www.facebook.com/login/" target="_blank">Facebook</a>
+                <a href="https://twitter.com/login?" target="_blank">Twitter</a>
+                <a href="https://www.instagram.com/accounts/login/?hl=en" target="_blank"   >Instagram</a>
+            </div>
+        </div>
+        
+        
+        
+    
+        
+
+    </div>
+    <script src="room.js"></script>
+</body>
+</html>
